@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Visual Studio Enterprise 2017 Release - amd64",
+    "visualStudio": "4a46d30d",
+    "visualStudioArchitecture": "x64",
+    "preferredGenerator": {
+      "name": "Visual Studio 15 2017",
+      "platform": "x64",
+      "toolset": "host=x64"
+    }
+  },
+  {
+    "name": "Visual Studio Enterprise 2017 Release - amd64_x86",
+    "visualStudio": "4a46d30d",
+    "visualStudioArchitecture": "x64",
+    "preferredGenerator": {
+      "name": "Visual Studio 15 2017",
+      "platform": "win32",
+      "toolset": "host=x64"
+    }
+  },
+  {
+    "name": "Visual Studio Enterprise 2017 Release - x86",
+    "visualStudio": "4a46d30d",
+    "visualStudioArchitecture": "x86",
+    "preferredGenerator": {
+      "name": "Visual Studio 15 2017",
+      "platform": "win32",
+      "toolset": "host=x86"
+    }
+  },
+  {
+    "name": "Visual Studio Enterprise 2017 Release - x86_amd64",
+    "visualStudio": "4a46d30d",
+    "visualStudioArchitecture": "x86",
+    "preferredGenerator": {
+      "name": "Visual Studio 15 2017",
+      "platform": "x64",
+      "toolset": "host=x86"
+    }
+  }
+]

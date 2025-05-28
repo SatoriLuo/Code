@@ -1,0 +1,78 @@
+{
+    "buildType": {
+      "default": "debug",
+      "description": "The build type.",
+      "choices": {
+        "debug": {
+          "short": "Debug",
+          "long": "Disable optimizations - include debug information.",
+          "buildType": "Debug",
+		  "settings": {
+		    "CMAKE_BUILD_TYPE": "DEBUG",
+		  }
+        },
+        "release": {
+          "short": "Release",
+          "long": "Optimize for speed - exclude debug information.",
+          "buildType": "Release",
+		  "settings": {
+		    "CMAKE_BUILD_TYPE": "RELEASE",
+		  }
+        }
+      }
+    },
+	"Platform": {
+	  "default": "win64_vc141",
+	  "description": "platform for target build",
+	  "choices": {
+	    "win32_vc90": {
+			"short": "win32_vc90",
+			"long": "win32_vc90",
+			"settings": {
+			   "PLATFORM": "win32_vc90",
+			},
+	    },
+		"win64_vc90": {
+			"long": "win64_vc90",
+			"short": "win64_vc90",
+		    "settings": {
+				"PLATFORM": "win64_vc90",
+			}
+		},
+		"win32_vc141": {
+			"long": "win32_vc141",
+			"short": "win32_vc141",
+		    "settings": {
+				"PLATFORM": "win32_vc141",
+			}
+		},
+		"win64_vc141": {
+			"long": "win64_vc141",
+			"short": "win64_vc141",
+		    "settings": {
+				"PLATFORM": "win64_vc141",
+			}
+		},
+	  }
+	},
+    "buildTarget": {
+      "default": "x64",
+      "description": "abi for 64 bit target build",
+      "choices": {
+        "x64": {
+          "short": "x64",
+          "long": "abi for 64 bit",
+          "settings": {
+            "CAMKE_BUILD_GENERATOR": "x64",
+          }
+        },
+        "x86": {
+          "short": "x86",
+          "long": "abi for 32 bit target build",
+          "settings": {
+            "CAMKE_BUILD_GENERATOR": "x86",
+          }
+        }
+      }
+    }
+  }

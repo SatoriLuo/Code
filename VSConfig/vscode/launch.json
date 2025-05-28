@@ -1,0 +1,39 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug-x86",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "console": "newExternalWindow",
+            "program": "${workspaceFolder}\\output\\win32_vc90\\${workspaceRootFolderName}.exe",
+        },
+        {
+            "name": "Debug-x64",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "console": "newExternalWindow",
+            "program": "E:\\GoCloud-Base\\trunk\\GoVideo\\trunk\\GSPlaySDK_ff5\\output\\win64_vc90\\GSPlaySDKDemo.exe",
+        },
+        {
+            "name": "Attach to Process",
+            "type": "cppvsdbg",
+            "request": "attach",
+            "processId": "${command:pickProcess}",
+        }
+         
+    ]    
+}
+
+    
