@@ -1,0 +1,135 @@
+{
+  // 请参阅 https://go.microsoft.com//fwlink//?linkid=834763 了解有关此文件的详细信息。
+  "configurations": [
+    {
+      "name": "x64-Debug_vs2017",
+      "generator": "Visual Studio 15 2017 Win64",
+      "configurationType": "Debug",
+      "inheritEnvironments": [ "msvc_x64_x64" ],
+      "buildRoot": "${projectDir}\\build\\${name}",
+      "installRoot": "${projectDir}\\install\\${name}",
+      "cmakeCommandArgs": "-DPLATFORM=win64_vc141 -DCMAKE_BUILD_TYPE=DEBUG",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": ""
+    },
+    {
+      "name": "x64-Release_vs2017",
+      "generator": "Visual Studio 15 2017 Win64",
+      "configurationType": "RelWithDebInfo",
+      "inheritEnvironments": [ "msvc_x64_x64" ],
+      "buildRoot": "${projectDir}\\CMakeBuilds\\build\\${name}",
+      "installRoot": "${projectDir}\\CMakeBuilds\\install\\${name}",
+      "cmakeCommandArgs": "-DPLATFORM=win64_vc141 -DCMAKE_BUILD_TYPE=RELEASE",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": ""
+    },
+    {
+      "name": "x64-Debug_vs2008",
+      "generator": "Visual Studio 9 2008 Win64",
+      "configurationType": "Debug",
+      "inheritEnvironments": [ "msvc_x64_x64" ],
+      "buildRoot": "${projectDir}\\build\\${name}",
+      "installRoot": "${projectDir}\\install\\${name}",
+      "cmakeCommandArgs": "-DPLATFORM=win64_vc90 -DCMAKE_BUILD_TYPE=DEBUG -G \"Visual Studio 9 2008 Win64\"",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": ""
+    },
+    {
+      "name": "x64-Release_vs2008",
+      "generator": "Visual Studio 9 2008 Win64",
+      "configurationType": "RelWithDebInfo",
+      "inheritEnvironments": [ "msvc_x64_x64" ],
+      "buildRoot": "${projectDir}\\CMakeBuilds\\build\\${name}",
+      "installRoot": "${projectDir}\\CMakeBuilds\\install\\${name}",
+      "cmakeCommandArgs": "-DPLATFORM=win64_vc90 -DCMAKE_BUILD_TYPE=RELEASE -G \"Visual Studio 9 2008 Win64\"",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": ""
+    },
+    {
+      "name": "x86-Debug_vs2017",
+      "generator": "Visual Studio 15 2017",
+      "configurationType": "Debug",
+      "inheritEnvironments": [ "msvc_x86" ],
+      "buildRoot": "${projectDir}\\CMakeBuilds\\build\\${name}",
+      "installRoot": "${projectDir}\\CMakeBuilds\\install\\${name}",
+      "cmakeCommandArgs": "-DPLATFORM=win32_vc141 -DCMAKE_BUILD_TYPE=DEBUG",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": ""
+    },
+    {
+      "name": "x86-Release_vs2017",
+      "generator": "Visual Studio 15 2017",
+      "configurationType": "RelWithDebInfo",
+      "inheritEnvironments": [ "msvc_x86" ],
+      "buildRoot": "${projectDir}\\CMakeBuilds\\build\\${name}",
+      "installRoot": "${projectDir}\\CMakeBuilds\\install\\${name}",
+      "cmakeCommandArgs": "-DPLATFORM=win32_vc141 -DCMAKE_BUILD_TYPE=RELEASE",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": ""
+    },
+    {
+      "name": "x86-Debug_vs2008",
+      "generator": "Visual Studio 9 2008",
+      "configurationType": "Debug",
+      "inheritEnvironments": [ "msvc_x86" ],
+      "buildRoot": "${projectDir}\\CMakeBuilds\\build\\${name}",
+      "installRoot": "${projectDir}\\CMakeBuilds\\install\\${name}",
+      "cmakeCommandArgs": "-DPLATFORM=win32_vc90 -DCMAKE_BUILD_TYPE=DEBUG -G \"Visual Studio 9 2008\"",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": ""
+    },
+    {
+      "name": "x86-Release_vs2008",
+      "generator": "Visual Studio 9 2008",
+      "configurationType": "RelWithDebInfo",
+      "inheritEnvironments": [ "msvc_x86" ],
+      "buildRoot": "${projectDir}\\CMakeBuilds\\build\\${name}",
+      "installRoot": "${projectDir}\\CMakeBuilds\\install\\${name}",
+      "cmakeCommandArgs": "-DPLATFORM=win32_vc90 -DCMAKE_BUILD_TYPE=RELEASE -G \"Visual Studio 9 2008\"",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": ""
+    },
+    {
+      "name": "Linux-Debug-gcc4.8",
+      "generator": "Unix Makefiles",
+      "remoteMachineName": "${defaultRemoteMachineName}",
+      "configurationType": "Debug",
+      "remoteCMakeListsRoot": "/var/tmp/src/${workspaceHash}/${name}",
+      "cmakeExecutable": "/usr/local/bin/cmake",
+      "buildRoot": "${projectDir}\\CMakeBuilds\\build\\${name}",
+      "installRoot": "${projectDir}\\CMakeBuilds\\install\\${name}",
+      "remoteBuildRoot": "/var/tmp/build/${workspaceHash}/build/${name}",
+      "remoteInstallRoot": "/var/tmp/build/${workspaceHash}/install/${name}",
+      "remoteCopySources": true,
+      "remoteCopySourcesOutputVerbosity": "Normal",
+      "remoteCopySourcesConcurrentCopies": "10",
+      "remoteCopySourcesMethod": "rsync",
+      "remoteCopyBuildOutput": false,
+      "cmakeCommandArgs": "-DPLATFORM=linux64_gcc4.8 -DREMOTE_TEST=ON -DROOT_DIR=/home/Gocloud/workspace/linux_gcc4.8_cmake/CommonLibs/",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": [ "linux_x64" ]
+    },
+    {
+      "name": "Linux-Release-gcc4.8",
+      "generator": "Unix Makefiles",
+      "remoteMachineName": "${defaultRemoteMachineName}",
+      "configurationType": "Release",
+      "remoteCMakeListsRoot": "/var/tmp/src/${workspaceHash}/${name}",
+      "cmakeExecutable": "/usr/local/bin/cmake",
+      "buildRoot": "${projectDir}\\CMakeBuilds\\build\\${name}",
+      "installRoot": "${projectDir}\\CMakeBuilds\\install\\${name}",
+      "remoteBuildRoot": "/var/tmp/build/${workspaceHash}/build/${name}",
+      "remoteInstallRoot": "/var/tmp/build/${workspaceHash}/install/${name}",
+      "remoteCopySources": true,
+      "remoteCopySourcesOutputVerbosity": "Normal",
+      "remoteCopySourcesConcurrentCopies": "10",
+      "remoteCopySourcesMethod": "rsync",
+      "remoteCopyBuildOutput": false,
+      "cmakeCommandArgs": "-DPLATFORM=linux64_gcc4.8 -DREMOTE_TEST=ON -DROOT_DIR=/home/Gocloud/workspace/linux_gcc4.8_cmake/CommonLibs/",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": [ "linux_x64" ]
+    }
+  ]
+}
